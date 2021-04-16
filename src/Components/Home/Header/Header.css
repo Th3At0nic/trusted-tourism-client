@@ -1,0 +1,6 @@
+.header-container {
+  height: 1000px;
+  position: relative;
+  background-image: url("../../../images/whtiebg3.jpg");
+  background-size: cover;
+}

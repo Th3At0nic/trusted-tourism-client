@@ -1,0 +1,16 @@
+.story-container {
+  /* background-color: #e8e9e3; */
+  background-image: url("../../../images/handsup1.jpg");
+  background-size: cover;
+  /* background-repeat: no-repeat; */
+}
+.story h1 {
+  font-size: 60px;
+}
+.story p {
+  font-size: 20px;
+}
+/* .story:hover {
+  cursor: pointer;
+  background-color: gray;
+} */
