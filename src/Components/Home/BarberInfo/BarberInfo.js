@@ -9,20 +9,23 @@ import {
 const BarberInfo = () => {
   const infosData = [
     {
-      title: "Opening Hours",
-      description: "We are open 7 days",
+      title: "Hours",
+      description: `Mon to Fri: 7:30 am — 1:00 am
+      Sat: 9:00 am — 1:00 am
+      Sun: 9:00 am — 11:30 pm`,
       icon: faClock,
       background: "primary",
     },
     {
-      title: "Visit Our Location",
-      description: "Gulshan-1, Dhaka",
+      title: "Location",
+      description: "85 Royal Mint Street,London, E1 8LG, UK",
       icon: faMapMarkerAlt,
       background: "dark",
     },
     {
-      title: "Contact Us",
-      description: "+8801777777777",
+      title: "Contact",
+      description: `T: 070 9485 7568
+      info@beautysalon.com`,
       icon: faPhone,
       background: "primary",
     },

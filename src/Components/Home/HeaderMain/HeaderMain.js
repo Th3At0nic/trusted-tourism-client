@@ -16,7 +16,9 @@ const HeaderMain = () => {
           ab ut quos quisquam iure sapiente voluptatem itaque. Eaque, ex. Nobis,
           nisi libero!
         </p>
-        <button className="btn btn-primary">Book Appointment</button>
+        <button type="button" class="btn btn-outline-dark pe-5 ps-5">
+          BOOK APPOINTMENT
+        </button>
       </div>
       <div className="col-md-6 offset-md-1">
         <img
