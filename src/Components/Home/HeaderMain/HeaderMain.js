@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import bigRoom from "../../../images/roombig1.jpg";
 
 const HeaderMain = () => {
@@ -16,9 +17,11 @@ const HeaderMain = () => {
           ab ut quos quisquam iure sapiente voluptatem itaque. Eaque, ex. Nobis,
           nisi libero!
         </p>
-        <button type="button" class="btn btn-outline-dark pe-5 ps-5">
-          BOOK APPOINTMENT
-        </button>
+        <Link to="/appointment">
+          <button type="button" class="btn btn-outline-dark pe-5 ps-5">
+            BOOK APPOINTMENT
+          </button>
+        </Link>
       </div>
       <div className="col-md-6 offset-md-1">
         <img

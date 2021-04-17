@@ -1,0 +1,6 @@
+.headerBG {
+  height: 1000px;
+  position: relative;
+  background-image: url(../../../images/bgopa.png);
+  background-size: cover;
+}

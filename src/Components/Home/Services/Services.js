@@ -6,6 +6,7 @@ import bangTrim from "../../../images/bangtrim.jpg";
 import kidsHirCut from "../../../images/kidshaircut.jpg";
 import scalpMassage from "../../../images/scalp.jpg";
 import ServiceDetail from "../ServiceDetail/ServiceDetail";
+import { Link } from "react-router-dom";
 
 const Services = () => {
   const serviceData = [
@@ -66,7 +67,14 @@ const Services = () => {
           ))}
         </div>
       </div>
-      <hr/>
+      <div className="text-center">
+        <Link to="/appointment">
+          <button type="button" class="btn btn-outline-dark pe-5 ps-5 m-5">
+            BOOK APPOINTMENT
+          </button>
+        </Link>
+      </div>
+      <hr />
     </section>
   );
 };

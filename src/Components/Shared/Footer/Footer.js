@@ -1,22 +1,15 @@
 import React from "react";
 import "./Footer.css";
-import FooterCol from "../FooterCol/FooterCol";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebookF,
   faInstagram,
   faGooglePlusG,
 } from "@fortawesome/free-brands-svg-icons";
+import FooterCol from "../FooterCol/FooterCol";
 
 const Footer = () => {
-  const noNamed = [
-    { name: "" },
-    // { name: "Emergency Dental Care", link: "/emergency" },
-    // { name: "Check Up", link: "/checkup" },
-    // { name: "Treatment of Personal Diseases", link: "/personal-treatment" },
-    // { name: "Tooth Extraction", link: "/tooth-extract" },
-    // { name: "Check Up", link: "/checkup" },
-  ];
+  const noNamed = [{ name: "" }];
   const ourAddress = [
     {
       name: "85 Royal Mint Street,London, E1 8LG, UK",

@@ -1,30 +1,30 @@
 import React from "react";
 import Testimonial from "../Testimonial/Testimonial";
 import "./Testimonials.css";
-import wilson from "../../../images/3members.jpg";
-import ema from "../../../images/3members.jpg";
-import aliza from "../../../images/3members.jpg";
+import wilson from "../../../images/rvwm.jpeg";
+import ema from "../../../images/rvwf2.jpeg";
+import aliza from "../../../images/rvwf1.jpeg";
 
 const testimonialData = [
   {
     quote:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic non architecto nobis, adipisci recusandae repellat accusantium consequuntur, qui nisi deserunt blanditiis mollitia, illo! ",
     name: "Wilson Harry",
-    from: "California",
+    from: "London",
     img: wilson,
   },
   {
     quote:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic non architecto nobis, adipisci recusandae repellat accusantium consequuntur, qui nisi deserunt blanditiis mollitia, illo! ",
     name: "Ema Gomez",
-    from: "California",
+    from: "Bristol",
     img: ema,
   },
   {
     quote:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic non architecto nobis, adipisci recusandae repellat accusantium consequuntur, qui nisi deserunt blanditiis mollitia, illo! ",
     name: "Aliza Farari",
-    from: "California",
+    from: "Birmingham",
     img: aliza,
   },
 ];
