@@ -2,6 +2,8 @@ import React, { createContext, useState } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
 import Appointment from "./Components/Appointment/Appointment/Appointment";
+import AddBeautician from "./Components/Dashboard/AddBeautician/AddBeautician";
+import Dashboard from "./Components/Dashboard/Dashboard/Dashboard";
 import Home from "./Components/Home/Home";
 import Login from "./Components/Login/Login";
 import NoMatch from "./Components/NoMatch/NoMatch";
@@ -18,9 +20,15 @@ function App() {
           <Route exact path="/">
             <Home></Home>
           </Route>
-          <PrivateRoute path="/appointment">
+          <PrivateRoute path="/bookAppointment">
             <Appointment></Appointment>
           </PrivateRoute>
+          <PrivateRoute path="/dashboard">
+            <Dashboard></Dashboard>
+          </PrivateRoute>
+          <Route path="/addBeautician">
+            <AddBeautician></AddBeautician>
+          </Route>
           <Route path="/login">
             <Login></Login>
           </Route>

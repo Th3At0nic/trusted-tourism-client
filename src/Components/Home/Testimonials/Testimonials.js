@@ -36,7 +36,7 @@ const Testimonials = () => {
         <div className="section-header">
           <h5 className="text-primary text-uppercase">Testimonial</h5>
           <h1>
-            What Our Customers <br /> Says{" "}
+            What Our Guests <br /> Says{" "}
           </h1>
         </div>
         <div className="card-deck mt-5">

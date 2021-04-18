@@ -31,7 +31,7 @@ const AppointmentForm = ({ modalIsOpen, closeModal, appointmentOn, date }) => {
 
     fetch("http://localhost:5003/addAppointment", {
       method: "POST",
-      header: { "Content-Type": "application/json" },
+      headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data),
     })
       .then((res) => res.json())

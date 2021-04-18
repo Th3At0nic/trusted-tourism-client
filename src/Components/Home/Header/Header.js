@@ -1,5 +1,4 @@
 import React from "react";
-import BarberInfo from "../BarberInfo/BarberInfo";
 import HeaderMain from "../HeaderMain/HeaderMain";
 import Navbar from "../../Shared/Navbar/Navbar";
 import "./Header.css";
@@ -9,7 +8,6 @@ const Header = () => {
     <div className="header-container">
       <Navbar></Navbar>
       <HeaderMain></HeaderMain>
-      <BarberInfo></BarberInfo>
     </div>
   );
 };
