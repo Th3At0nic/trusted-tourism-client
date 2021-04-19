@@ -1,10 +1,10 @@
 import React from "react";
 import Footer from "../Shared/Footer/Footer";
+import Beauticians from "./Beauticians/Beauticians";
 import Header from "./Header/Header";
 import OurStory from "./OurStory/OurStory";
 import Services from "./Services/Services";
 import Shop from "./Shop/Shop";
-import Team from "./Team/Team";
 import Testimonials from "./Testimonials/Testimonials";
 
 const Home = () => {
@@ -12,9 +12,9 @@ const Home = () => {
     <div>
       <Header></Header>
       <Services></Services>
+      <Beauticians></Beauticians>
       <OurStory></OurStory>
       <Shop></Shop>
-      <Team></Team>
       <Testimonials></Testimonials>
       <Footer></Footer>
     </div>

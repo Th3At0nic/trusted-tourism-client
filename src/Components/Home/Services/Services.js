@@ -1,57 +1,74 @@
-import React from "react";
-import hairCut from "../../../images/haircut.jpg";
-import clipperCut from "../../../images/clippercut.jpg";
-import signatureCut from "../../../images/signature.jpg";
-import bangTrim from "../../../images/bangtrim.jpg";
-import kidsHirCut from "../../../images/kidshaircut.jpg";
-import scalpMassage from "../../../images/scalp.jpg";
+import React, { useEffect, useState } from "react";
+// import hairCut from "../../../images/haircut.jpg";
+// import clipperCut from "../../../images/anna.png";
+// import signatureCut from "../../../images/signature.jpg";
+// import bangTrim from "../../../images/bangtrim.jpg";
+// import kidsHirCut from "../../../images/kidshaircut.jpg";
+// import scalpMassage from "../../../images/scalp.jpg";
 import ServiceDetail from "../ServiceDetail/ServiceDetail";
 import { Link } from "react-router-dom";
 
 const Services = () => {
-  const serviceData = [
-    {
-      name: "Clipper Cut",
-      price: 30,
-      img: clipperCut,
-      description:
-        "A haircut using clippers to achieve an ultra-short design. (30 min)",
-    },
-    {
-      name: "Hair Cut",
-      price: 39,
-      img: hairCut,
-      description:
-        "A haircut, trim or shape on anyone over the age of 10. (60 min)",
-    },
-    {
-      name: "Signature Haircut",
-      price: 49,
-      img: signatureCut,
-      description:
-        "A haircut, trim, shape on anyone over the age of 10 with a customized conditioning treatment. (1 hr 15 min)",
-    },
-    {
-      name: "Bang Trim",
-      price: 19,
-      img: bangTrim,
-      description:
-        "A trim on the bang area. Shampoo, conditioner and scalp massage not included. (15 min)",
-    },
-    {
-      name: "Bang Trim & massage",
-      price: 19,
-      img: scalpMassage,
-      description:
-        "A trim on the bang area. Shampoo, conditioner and scalp massage. (15 min)",
-    },
-    {
-      name: "Kids HairCut",
-      price: 20,
-      img: kidsHirCut,
-      description: "A haircut on a child age 10 & under. (30 min)",
-    },
-  ];
+  const [services, setServices] = useState([]);
+  // const services = [
+  //   {
+  //     service: "Clipper Cut",
+  //     cost: 30,
+  //     img: clipperCut,
+  //     space: 10,
+  //     detail:
+  //       "A haircut using clippers to achieve an ultra-short design. (30 min)",
+  //   },
+  //   {
+  //     service: "Clipper Cut",
+  //     cost: 30,
+  //     img: clipperCut,
+  //     space: 10,
+  //     detail:
+  //       "A haircut using clippers to achieve an ultra-short design. (30 min)",
+  //   },
+  //   {
+  //     service: "Clipper Cut",
+  //     cost: 30,
+  //     img: clipperCut,
+  //     space: 10,
+  //     detail:
+  //       "A haircut using clippers to achieve an ultra-short design. (30 min)",
+  //   },
+  //   {
+  //     service: "Clipper Cut",
+  //     cost: 30,
+  //     img: clipperCut,
+  //     space: 10,
+  //     detail:
+  //       "A haircut using clippers to achieve an ultra-short design. (30 min)",
+  //   },
+  //   {
+  //     service: "Clipper Cut",
+  //     cost: 30,
+  //     img: clipperCut,
+  //     space: 10,
+  //     detail:
+  //       "A haircut using clippers to achieve an ultra-short design. (30 min)",
+  //   },
+  //   {
+  //     service: "Clipper Cut",
+  //     cost: 30,
+  //     img: clipperCut,
+  //     space: 10,
+  //     detail:
+  //       "A haircut using clippers to achieve an ultra-short design. (30 min)",
+  //   },
+  // ];
+
+  useEffect(() => {
+    fetch("http://localhost:5003/services")
+      .then((res) => res.json())
+      .then((data) => {
+        setServices(data);
+        console.log(data);
+      });
+  }, []);
 
   return (
     <section className="mt-5 pt-5 mb-5 p-5">
@@ -62,7 +79,7 @@ const Services = () => {
       <hr />
       <div className="d-flex justify-content-center">
         <div className="row w-75">
-          {serviceData.map((service) => (
+          {services.map((service) => (
             <ServiceDetail service={service}></ServiceDetail>
           ))}
         </div>

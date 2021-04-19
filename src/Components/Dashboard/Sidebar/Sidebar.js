@@ -9,6 +9,8 @@ import {
   faGripHorizontal,
   faUsers,
   faUserPlus,
+  faHome,
+  faTasks,
 } from "@fortawesome/free-solid-svg-icons";
 
 const Sidebar = () => {
@@ -18,6 +20,11 @@ const Sidebar = () => {
       style={{ height: "100vh" }}
     >
       <ul className="list-unstyled">
+        <li>
+          <Link to="/home" className="text-white">
+            <FontAwesomeIcon icon={faHome} /> <span>Home</span>
+          </Link>
+        </li>
         <li>
           <Link to="/dashboard" className="text-white">
             <FontAwesomeIcon icon={faGripHorizontal} /> <span>Dashboard</span>
@@ -31,6 +38,11 @@ const Sidebar = () => {
         <li>
           <Link to="/guests" className="text-white">
             <FontAwesomeIcon icon={faUsers} /> <span>Guests</span>
+          </Link>
+        </li>
+        <li>
+          <Link to="/addService" className="text-white">
+            <FontAwesomeIcon icon={faTasks} /> <span>Add Service</span>
           </Link>
         </li>
         <li>
