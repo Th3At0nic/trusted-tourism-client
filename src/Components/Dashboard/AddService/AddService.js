@@ -19,9 +19,9 @@ const AddService = () => {
   const handleSubmit = () => {
     const formData = new FormData();
     formData.append("file", file);
-    formData.append("service", serviceInfo.service);
-    formData.append("cost", serviceInfo.cost);
-    formData.append("space", serviceInfo.space);
+    formData.append("packageName", serviceInfo.packageName);
+    formData.append("price", serviceInfo.price);
+    formData.append("person", serviceInfo.person);
     formData.append("detail", serviceInfo.detail);
 
     fetch("http://localhost:5003/addService", {
@@ -44,47 +44,49 @@ const AddService = () => {
           <Sidebar></Sidebar>
         </div>
         <div className="col-md-10 p-5">
-          <h2>Add Service</h2>
+          <h2>Add package</h2>
           <form onSubmit={handleSubmit}>
             <div class="form-group">
-              <label for="exampleInputEmail1">Service Name</label>
+              <label for="exampleInputEmail1">package Name</label>
               <input
                 onBlur={handleBlur}
                 type="text"
                 class="form-control"
-                name="service"
-                placeholder="Service you want to add:"
+                name="packageName"
+                placeholder="package  you want to add:"
               />
             </div>
             <div class="form-group">
-              <label for="exampleInputPassword1">Cost</label>
+              <label for="exampleInputPassword1">Price</label>
               <input
                 onBlur={handleBlur}
                 type="number"
                 class="form-control"
-                name="cost"
-                placeholder="Service cost:"
+                name="price"
+                placeholder="package price:"
               />
             </div>
             <div class="form-group">
-              <label for="exampleInputPassword1">Available space</label>
+              <label for="exampleInputPassword1">Person</label>
               <input
                 onBlur={handleBlur}
                 type="number"
                 class="form-control"
-                name="space"
-                placeholder="Available space:"
+                name="person"
+                placeholder="How many person:"
               />
             </div>
             <div class="form-group">
               <label for="exampleInputPassword1">Description</label>
-              <input
+              <textarea
                 onBlur={handleBlur}
                 type="text"
                 class="form-control"
                 name="detail"
-                placeholder="Service description:"
-              />
+                placeholder="package description:"
+                cols="30"
+                rows="5"
+              ></textarea>
             </div>
             <div class="form-group">
               <label for="exampleInputPassword1">Upload image</label>

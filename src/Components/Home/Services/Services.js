@@ -1,10 +1,5 @@
 import React, { useEffect, useState } from "react";
-// import hairCut from "../../../images/haircut.jpg";
 // import clipperCut from "../../../images/anna.png";
-// import signatureCut from "../../../images/signature.jpg";
-// import bangTrim from "../../../images/bangtrim.jpg";
-// import kidsHirCut from "../../../images/kidshaircut.jpg";
-// import scalpMassage from "../../../images/scalp.jpg";
 import ServiceDetail from "../ServiceDetail/ServiceDetail";
 import { Link } from "react-router-dom";
 

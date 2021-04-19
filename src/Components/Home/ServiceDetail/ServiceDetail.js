@@ -3,37 +3,31 @@ import { Link } from "react-router-dom";
 import img from "../../../images/bob.png";
 
 const ServiceDetail = ({ service }) => {
+  const { _id, packageName, price, person, detail } = service;
+
   return (
-    <div className="col-md-6 pb-5 text-center border border-1">
-      <Link to="/appointment">
-        <h4>
-          <div className="row">
-            <div className="col">{service.service}</div>
-            <small className="col text-secondary">${service.cost}</small>
-            <small className="col text-secondary">
-              {service.space} space available
-            </small>
-          </div>
-        </h4>{" "}
-        <br />
-        <div>
-          {service.image ? (
-            <img
-              style={{ height: "350px" }}
-              src={`data:image/png;base64, ${service.image.img}`}
-              alt=""
-            />
-          ) : (
-            <img
-              style={{ height: "350px" }}
-              className="img-fluid mb-3"
-              src={img}
-              alt=""
-            />
-          )}
+    <div className="col-lg-4 col-md-4 col-sm-6 col-xs-12 service-card mb-4">
+      <div className="card" style={{ width: "100%" }}>
+        <div className="img-box">
+          <img
+            src={`data:image/png;base64, ${service.image.img}`}
+            className="card-img-top"
+            alt={packageName}
+          />
         </div>
-        <p className="pt-2 text-secondary">{service.detail}</p>
-      </Link>
+
+        <div className="card-body">
+          <h4 className="text-theme">{packageName}</h4>
+          <p className="card-text text-secondary">{detail}...</p>
+        </div>
+
+        <div className="card-footer d-flex justify-content-between">
+          <span>${price}</span>
+          <Link className="btn btn-info" to={"/checkout/" + _id}>
+            Buy Now
+          </Link>
+        </div>
+      </div>
     </div>
   );
 };
