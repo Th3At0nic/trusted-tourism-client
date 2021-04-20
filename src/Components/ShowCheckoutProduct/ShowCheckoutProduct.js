@@ -3,7 +3,7 @@ import img from "../../images/passenger.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const ShowCheckoutProduct = ({ service }) => {
   console.log(service);
-  const { _id, packageName, price, person, detail } = service;
+  const { packageName, price, person, detail } = service;
   return (
     <div className="checkout-product-info shadow p-3 mb-5 bg-body rounded">
       <div className="inner-box d-flex align-items-center row">
