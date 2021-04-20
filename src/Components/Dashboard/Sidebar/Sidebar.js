@@ -10,6 +10,7 @@ import {
   faHome,
   faTasks,
   faComments,
+  faShoppingCart,
 } from "@fortawesome/free-solid-svg-icons";
 
 const Sidebar = () => {
@@ -27,6 +28,11 @@ const Sidebar = () => {
         <li>
           <Link to="/dashboard" className="text-white">
             <FontAwesomeIcon icon={faGripHorizontal} /> <span>Dashboard</span>
+          </Link>
+        </li>
+        <li>
+          <Link to="/dashboard/orderList" className="text-white">
+            <FontAwesomeIcon icon={faShoppingCart} /> <span>My Bookings</span>
           </Link>
         </li>
         <li>
