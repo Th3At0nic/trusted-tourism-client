@@ -13,7 +13,6 @@ const Orders = () => {
     fetch(url)
       .then((res) => res.json())
       .then((data) => {
-        //console.log(data);
         if (data) {
           setOrders(data);
         }
@@ -28,6 +27,12 @@ const Orders = () => {
           <thead>
             <tr style={{ borderBottom: "1px solid rgba(0,0,0,0.25)" }}>
               <th className="text-left" scope="col">
+                Name
+              </th>
+              <th className="text-left" scope="col">
+                Booking ID
+              </th>
+              <th className="text-left" scope="col">
                 Date
               </th>
               <th className="text-right" scope="col">
@@ -35,9 +40,6 @@ const Orders = () => {
               </th>
               <th className="text-right" scope="col">
                 Discount
-              </th>
-              <th className="text-right" scope="col">
-                Delivery Charge
               </th>
               <th className="text-right" scope="col">
                 Total
@@ -49,7 +51,7 @@ const Orders = () => {
                 Payment Type
               </th>
               <th className="text-center" scope="col">
-                Order Status
+                Booking Status
               </th>
             </tr>
           </thead>

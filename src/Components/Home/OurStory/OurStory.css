@@ -1,5 +1,5 @@
 .story-container {
-  background-image: url("../../../images/handsup1.jpg");
+  background-color: rgb(230, 243, 243);
   background-size: cover;
 }
 .story h1 {
@@ -8,7 +8,3 @@
 .story p {
   font-size: 20px;
 }
-/* .story:hover {
-  cursor: pointer;
-  background-color: gray;
-} */

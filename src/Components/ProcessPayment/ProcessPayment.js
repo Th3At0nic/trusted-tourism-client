@@ -9,7 +9,6 @@ const stripePromise = loadStripe(
 const ProcessPayment = ({ handlePayment }) => {
   return (
     <Elements stripe={stripePromise}>
-      {/* <SimpleCardForm></SimpleCardForm> */}
       <SplitCardForm handlePayment={handlePayment}></SplitCardForm>
     </Elements>
   );

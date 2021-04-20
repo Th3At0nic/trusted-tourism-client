@@ -28,27 +28,25 @@ const Navbar = () => {
                 <Link to="/dashboard">Dashboard</Link>
               </a>
             </li>
-
             <li class="nav-item me-5">
-              <a class="nav-link" href="#">
+              <a class="nav-link" href="#reviews">
+                Reviews
+              </a>
+            </li>
+            <li class="nav-item me-5">
+              <a class="nav-link" href="#services">
                 Services
               </a>
             </li>
 
             <li class="nav-item me-5">
-              <a class="nav-link" href="#">
-                Reviews
+              <a class="nav-link" href="#gallery">
+                Gallery
               </a>
             </li>
 
             <li class="nav-item me-5">
-              <a class="nav-link" href="#">
-                Blogs
-              </a>
-            </li>
-
-            <li class="nav-item me-5">
-              <a class="nav-link" href="#">
+              <a class="nav-link" href="#footer">
                 Contact Us
               </a>
             </li>

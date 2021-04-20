@@ -12,24 +12,23 @@ const Footer = () => {
   const noNamed = [{ name: "" }];
   const ourAddress = [
     {
-      name: "85 Royal Mint Street,London, E1 8LG, UK",
+      name: "85 Royal Mint Street,Dhaka 1200, Bangladesh",
       link: "//google.com/map",
     },
     { name: "Yards", link: "//google.com/map" },
   ];
-  const ourProducts = [
-    { name: "Our Story", link: "/ourStory" },
-    { name: "Shop", link: "/shop" },
-    { name: "Wedding", link: "/wedding" },
-    { name: "Academy", link: "/academy" },
+  const ourOffices = [
+    { name: "Branches in Bangladesh", link: "/shop" },
+    { name: "Dhaka", link: "/wedding" },
+    { name: "Khulna", link: "/academy" },
     { name: "Contacts", link: "/contacts" },
     { name: "FAQ", link: "/faq" },
   ];
   const serviceMenu = [
     { name: "Our Story", link: "/ourStory" },
-    { name: "Shop", link: "/shop" },
-    { name: "Wedding", link: "/wedding" },
-    { name: "Academy", link: "/academy" },
+    { name: "All ranch", link: "/shop" },
+    { name: "Bangladesh", link: "/wedding" },
+    { name: "Thailand", link: "/academy" },
     { name: "Contacts", link: "/contacts" },
     { name: "FAQ", link: "/faq" },
   ];
@@ -39,11 +38,11 @@ const Footer = () => {
         <div className="row py-5">
           <FooterCol
             key={1}
-            menuTitle={"Goodness Glamour"}
+            menuTitle={"Trusted Tourism"}
             menuItems={noNamed}
           />
           <FooterCol key={2} menuTitle="Service Menu" menuItems={serviceMenu} />
-          <FooterCol key={3} menuTitle="Our Products" menuItems={ourProducts} />
+          <FooterCol key={3} menuTitle="Our Offices" menuItems={ourOffices} />
           <FooterCol key={4} menuTitle="Our Address" menuItems={ourAddress}>
             <ul className="social-media list-inline">
               <li className="list-inline-item">
@@ -65,7 +64,7 @@ const Footer = () => {
                 </a>
               </li>
             </ul>
-            <div className="mt-5">
+            <div id="footer" className="mt-5">
               <h6>Call us now</h6>
               <button className="btn btn-info">070 9485 7568</button>
             </div>
@@ -80,3 +79,6 @@ const Footer = () => {
 };
 
 export default Footer;
+//// sorry to say first i started my project as a beauty parlour website,
+//but then for some major issue at the last day i changed it to tourism website, so some name might be odd.
+//so please consider my problem

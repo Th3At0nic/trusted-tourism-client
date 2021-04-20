@@ -58,7 +58,6 @@ const SplitCardForm = ({ handlePayment }) => {
     });
 
     if (error) {
-      //console.log('[error]', error);
       setPaymentError(error.message);
       setPaymentSuccess(null);
     } else {

@@ -4,6 +4,8 @@ import { useContext, useState } from "react";
 import { useHistory, useLocation } from "react-router";
 import { UserContext } from "../../App";
 import firebaseConfig from "../../configs/firebase.config";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGoogle } from "@fortawesome/free-brands-svg-icons";
 
 // firebase.initializeApp(firebaseConfig);
 if (firebase.apps.length === 0) {
@@ -69,7 +71,7 @@ function Login() {
   };
 
   return (
-    <div className="App">
+    <div className="App d-flex justify-content-center p-5 m-5">
       {user.isSignedIn ? (
         <button
           className="btn btn-warning p-2 m-3"
@@ -82,7 +84,7 @@ function Login() {
           className="btn btn-warning p-2 m-3"
           onClick={handleGoogleSignIn}
         >
-          Continue with Google
+          <FontAwesomeIcon icon={faGoogle} /> Continue with Google
         </button>
       )}
       <br />

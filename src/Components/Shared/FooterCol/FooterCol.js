@@ -22,3 +22,6 @@ const FooterCol = (props) => {
 };
 
 export default FooterCol;
+//// sorry to say first i started my project as a beauty parlour website,
+//but then for some major issue at the last day i changed it to tourism website, so some name might be odd.
+//so please consider my problem

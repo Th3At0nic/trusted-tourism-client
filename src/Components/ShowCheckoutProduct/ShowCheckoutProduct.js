@@ -1,19 +1,30 @@
 import React from "react";
+import img from "../../images/passenger.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const ShowCheckoutProduct = ({ service }) => {
+  console.log(service);
   const { _id, packageName, price, person, detail } = service;
   return (
     <div className="checkout-product-info shadow p-3 mb-5 bg-body rounded">
       <div className="inner-box d-flex align-items-center row">
-        {/* <div className="img-box col-lg-4 col-md-4 col-sm-4 col-xs-12">
-          <img
-            src={`data:image/png;base64, ${service.image.img}`}
-            className="card-img-top img-fluid"
-            alt={packageName}
-          />
-        </div> */}
-        <div className="detail col-lg-6 col-md-6 col-sm-6 col-xs-12">
-          <h4 className="text-theme">
+        <div className="img-box  col ">
+          {service.image ? (
+            <img
+              style={{ height: "300px" }}
+              src={`data:image/png;base64, ${service.image.img}`}
+              alt=""
+            />
+          ) : (
+            <img
+              style={{ height: "300px" }}
+              className="img-fluid mb-3"
+              src={img}
+              alt=""
+            />
+          )}
+        </div>
+        <div className="detail col-md-5 ">
+          <h4 className="text-secondary">
             {packageName} | {person} person{" "}
             <small className="text-secondary">| ${price}</small>{" "}
           </h4>
@@ -31,3 +42,6 @@ const ShowCheckoutProduct = ({ service }) => {
 };
 
 export default ShowCheckoutProduct;
+//// sorry to say first i started my project as a beauty parlour website,
+//but then for some major issue at the last day i changed it to tourism website, so some name might be odd.
+//so please consider my problem

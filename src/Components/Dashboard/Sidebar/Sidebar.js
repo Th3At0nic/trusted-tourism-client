@@ -5,12 +5,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCog,
   faSignOutAlt,
-  faCalendar,
   faGripHorizontal,
-  faUsers,
   faUserPlus,
   faHome,
   faTasks,
+  faComments,
 } from "@fortawesome/free-solid-svg-icons";
 
 const Sidebar = () => {
@@ -31,13 +30,8 @@ const Sidebar = () => {
           </Link>
         </li>
         <li>
-          <Link to="/appointment" className="text-white">
-            <FontAwesomeIcon icon={faCalendar} /> <span>Appointment</span>
-          </Link>
-        </li>
-        <li>
-          <Link to="/guests" className="text-white">
-            <FontAwesomeIcon icon={faUsers} /> <span>Guests</span>
+          <Link to="/addReview" className="text-white">
+            <FontAwesomeIcon icon={faComments} /> <span>Add Review</span>
           </Link>
         </li>
         <li>
@@ -46,8 +40,8 @@ const Sidebar = () => {
           </Link>
         </li>
         <li>
-          <Link to="/addBeautician" className="text-white">
-            <FontAwesomeIcon icon={faUserPlus} /> <span>Add Beautician</span>
+          <Link to="/addMember" className="text-white">
+            <FontAwesomeIcon icon={faUserPlus} /> <span>Add Member</span>
           </Link>
         </li>
         <li>
