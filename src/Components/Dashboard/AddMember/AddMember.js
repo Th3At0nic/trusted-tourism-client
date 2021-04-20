@@ -42,7 +42,7 @@ const AddMember = () => {
           <Sidebar></Sidebar>
         </div>
         <div className="col-md-10 p-5">
-          <h2>Add Beautician</h2>
+          <h2>Add Member</h2>
           <form onSubmit={handleSubmit}>
             <div class="form-group">
               <label for="exampleInputEmail1">Email address</label>
