@@ -17,7 +17,7 @@ const AddReview = () => {
     formData.append("from", personInfo.from);
     formData.append("detail", personInfo.detail);
 
-    fetch("http://localhost:5003/addReview", {
+    fetch("https://arcane-ridge-87097.herokuapp.com/addReview", {
       method: "POST",
       body: formData,
     })

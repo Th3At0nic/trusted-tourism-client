@@ -33,7 +33,7 @@ const Testimonials = () => {
   const [testimonialData, setTestimonialData] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5003/addReview")
+    fetch("https://arcane-ridge-87097.herokuapp.com/addReview")
       .then((res) => res.json())
       .then((data) => setTestimonialData(data));
   }, []);

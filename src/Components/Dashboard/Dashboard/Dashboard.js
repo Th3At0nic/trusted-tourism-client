@@ -12,7 +12,7 @@ const Dashboard = () => {
   };
 
   useEffect(() => {
-    fetch("http://localhost:5003/appointmentsByDate", {
+    fetch("https://arcane-ridge-87097.herokuapp.com/appointmentsByDate", {
       method: "POST",
       headers: { "Content-type": "application/json" },
       body: JSON.stringify({ date: selectedDate }),

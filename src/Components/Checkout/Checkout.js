@@ -16,7 +16,7 @@ const Checkout = () => {
   console.log(checkoutData);
   //Getting Data based on ID
   useEffect(() => {
-    const url = `http://localhost:5003/showServiceById/${id}`;
+    const url = `https://arcane-ridge-87097.herokuapp.com/showServiceById/${id}`;
     fetch(url)
       .then((res) => res.json())
       .then((data) => {
@@ -45,7 +45,7 @@ const Checkout = () => {
     };
 
     //Sending Data to API
-    const url = `http://localhost:5003/addOrder`;
+    const url = `https://arcane-ridge-87097.herokuapp.com/addOrder`;
     fetch(url, {
       method: "POST",
       headers: {

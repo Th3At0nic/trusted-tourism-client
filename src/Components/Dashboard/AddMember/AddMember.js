@@ -22,7 +22,7 @@ const AddMember = () => {
     formData.append("name", personInfo.name);
     formData.append("email", personInfo.email);
 
-    fetch("http://localhost:5003/addMember", {
+    fetch("https://arcane-ridge-87097.herokuapp.com/addMember", {
       method: "POST",
       body: formData,
     })
